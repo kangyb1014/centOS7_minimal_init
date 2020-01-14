@@ -9,21 +9,15 @@ tar.gz 다운로드 링크: https://api.github.com/repos/kangyb1014/centOS7_mini
 
 초기 설정
 1.네트워크 잡아줌. [주의]마지막 ifcfg-enp0s3 파일의 이름이 다를 수 있습니다.
-
  sed -i "15s/ONBOOT=no/ONBOOT=yes/" /etc/sysconfig/network-scripts/ifcfg-enp0s3
-
  systemctl restart network
 
 
 2.다운로드 및 스크립트 실행
-
  wget https://api.github.com/repos/kangyb1014/centOS7_minimal_init/tarball
-
  mv ./tarball ./tarball.tar.gz
-
- tar -xvf aaa.tar
-
+ tar -xvf tarball.tar.gz
+ cd tarball
  chmod -R 777 ./kangyb1014-centOS7_minimal_init-3517667/*
-
  ./kangyb1014-centOS7_minimal_init-3517667/centOS_7_minimal_installation.sh
 

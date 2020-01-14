@@ -1,14 +1,11 @@
-#실행권한때문에 밑의 명령어 한번 해 줘야 함
-#chmod -R 777 ./*
-
-## set network
-#./network_init.sh
-
-## apache install
+## install apache
 ./apache_install.sh
 
-## php install
+## install php
 ./php_install.sh
 
-## mariaDB install
-mariadb_install.sh
+## install mariaDB
+./mariadb_install.sh
+
+## install vim
+./vim_install.sh

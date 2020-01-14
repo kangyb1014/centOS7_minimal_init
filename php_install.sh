@@ -20,3 +20,4 @@ sudo yum-config-manager --enable remi-php73
 # install php 7.3
 yum -y install php-fpm
 
+sed -i 's/index.html/index.html index.php' /var/httpd/conf/httpd.conf
