@@ -2,7 +2,7 @@
 #chmod -R 777 ./*
 
 ## set network
-./network_init.sh
+#./network_init.sh
 
 ## apache install
 ./apache_install.sh
@@ -11,4 +11,4 @@
 ./php_install.sh
 
 ## mariaDB install
-mariaDB_install.sh
+mariadb_install.sh
