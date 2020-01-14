@@ -20,9 +20,7 @@ tar.gz 다운로드 링크: https://api.github.com/repos/kangyb1014/centOS7_mini
 
  wget https://api.github.com/repos/kangyb1014/centOS7_minimal_init/tarball
 
- mv ./tarball ./tarball.tar.gz
-
- tar -xvf aaa.tar
+ tar -xvf tarball
 
  chmod -R 777 ./kangyb1014-centOS7_minimal_init-3517667/*
 
