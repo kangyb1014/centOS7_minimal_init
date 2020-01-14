@@ -1,7 +1,17 @@
 centOS 7 minimal에 패키지 설치 및 초기 작업 수행하는 스크립트
 
-실행권한때문에 밑의 명령어 한번 해 줘야 함
-chmod -R 777 ./*
+링크: https://api.github.com/repos/kangyb1014/centOS7_minimal_init/tarball
 
 
-https://api.github.com/repos/kangyb1014/centOS7_minimal_init/tarball
+초기 설정
+1.네트워크 잡아줌
+sed -i "15s/ONBOOT=no/ONBOOT=yes/" /etc/sysconfig/network-scripts/ifcfg-enp0s3
+systemctl restart network
+
+
+2.다운로드 및 스크립트 실행
+wget https://api.github.com/repos/kangyb1014/centOS7_minimal_init/tarball
+mv ./tarball ./tarball.tar.gz
+tar -xvf aaa.tar
+chmod -R 777 ./kangyb1014-centOS7_minimal_init-3517667/*
+./kangyb1014-centOS7_minimal_init-3517667/centOS_7_minimal_installation.sh
