@@ -8,7 +8,7 @@ centOS 7 minimal에 패키지 설치 및 초기 작업 수행하는 스크립트
 
 tar.gz 다운로드 링크: https://api.github.com/repos/kangyb1014/centOS7_minimal_init/tarball
 
-### centOS 7 minimal 설치 후 할   
+### centOS 7 minimal 설치 후 할 것  
 #### 1.네트워크 잡아줌.  
 [주의]마지막 ifcfg-enp0s3 파일의 이름이 다를 수 있습니다.  
 ```
