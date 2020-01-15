@@ -23,9 +23,10 @@ tar.gz 다운로드 링크: https://api.github.com/repos/kangyb1014/centOS7_mini
     tar -xvf tarball
 ```
 #### 3. 스크립트 실행
-kangyb1014-centOS7_minimal_init- 다음 숫자가 다를 수 있습니다.
-ls로 확인하시고 정확한 이름 넣어서 실행시켜주세요.
+**kangyb1014-centOS7_minimal_init- 다음 숫자가 다를 수 있습니다.
+ls로 확인하시고 정확한 이름 넣어서 실행시켜주세요.**
 ```
     chmod -R 777 ./kangyb1014-centOS7_minimal_init-3517667/*
+    cd ./kangyb1014-centOS7_minimal_init-3517667
     sudo ./kangyb1014-centOS7_minimal_init-3517667/centOS_7_minimal_install.sh
 ```
