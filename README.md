@@ -28,5 +28,5 @@ ls로 확인하시고 정확한 이름 넣어서 실행시켜주세요.**
 ```
     chmod -R 777 ./kangyb1014-centOS7_minimal_init-3517667/*
     cd ./kangyb1014-centOS7_minimal_init-3517667
-    sudo ./kangyb1014-centOS7_minimal_init-3517667/centOS_7_minimal_install.sh
+    sudo ./centOS_7_minimal_install.sh
 ```
