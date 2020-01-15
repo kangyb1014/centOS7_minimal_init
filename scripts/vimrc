@@ -85,6 +85,8 @@ set smartindent
 " syntax에 따라 접어두기
 " 접은 것을 열려면, zo를 누르기
 " 연 것을 다시 접으려면, zc를 누르기
-set foldmethod=indent " 최대 깊이는 1개로 고정 set foldnestmax=1
+set foldmethod=indent 
+" 최대 깊이는 1개로 고정 
+set foldnestmax=1
 
 " 출처: https://storycompiler.tistory.com/55 [아프니까 개발자다]
