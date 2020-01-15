@@ -20,15 +20,13 @@ sudo yum-config-manager --enable remi-php73
 # install php 7.3
 yum install -y php php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql -y
 
-# httpd.conf 파일 수정하여 index.php 추가
-sed -i 's/index.html/index.php index.html/' /etc/httpd/conf/httpd.conf
-
+# httpd.conf 파일 수정하여 php 모듈 추가
 sed -i 's,\(\AddType application/x-gzip .gz .tgz.*\),\1\n\tAddType application/x-httpd-php .php .html .htm .inc\n\tAddType application/x-httpd-php-source .phps,g' /etc/httpd/conf/httpd.conf
 
-# document root에 index.php 추가
-cp ./scripts/index.php /var/www/html
+# document root에 phpinfo.php 추가
+cp ./scripts/phpinfo.php /var/www/html
 
-chmod 755 /var/www/html/index.php
+chmod 755 /var/www/html/phpinfo.php
 
 # apache 재시작
 systemctl restart httpd
